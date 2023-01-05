@@ -3,7 +3,7 @@ import numpy as np
 np.set_printoptions(suppress=True)  # 不用科学计数法输出
 np.set_printoptions(linewidth=400)  # 输出不自动换行
 Vi = [0, 73, 71]  # 我方价值
-Vj = [0, 115, 126]  # 敌方价值
+Vj = [0, 125, 126]  # 敌方价值
 # Vaa = 1000  # 我方导弹价值
 # Vbb = 1000  # 敌方导弹价值
 Vaa = 25.2#25.2  # 我方导弹价值
@@ -123,12 +123,12 @@ for column in range(0, 9):
             y = row
     wo[y][column] = 1
 # print(wo)
-for row in range(0, 9):
-    for column in range(0, 9):
-        if di[row][column] == 1 and wo[row][column] == 1:
-            print()
-            # print('我方采取策略：', row)
-            # print('敌方采取策略：', column)
+# for row in range(0, 9):
+#     for column in range(0, 9):
+#         if di[row][column] == 1 and wo[row][column] == 1:
+#             print()
+#             print('我方采取策略：', row)
+#             print('敌方采取策略：', column)
 Payoff_Matrix2 = -Payoff_Matrix
-
+print('我方支付矩阵:')
 print(Payoff_Matrix)
